@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">SURVEY FORM</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </header>
+
+    <form id="survey-form" action="">
+      <div class="form-section">
+        <label id="name-label" for="">Name</label>
+        <input
+          class="form-control"
+          id="name"
+          type="text"
+          required
+          placeholder="Enter Full Name"
+        />
+      </div>
+
+      <div class="form-section">
+        <label id="email-label" for="">Email</label>
+        <input
+          class="form-control"
+          id="email"
+          type="email"
+          name=""
+          placeholder="Enter Email Address"
+          required
+        />
+      </div>
+
+      <div class="form-section">
+        <label id="number-label" for="">Age</label>
+        <input
+          class="form-control"
+          id="number"
+          type="number"
+          name=""
+          placeholder="Enter Your Age"
+          min="12"
+          max="99"
+          required
+        />
+      </div>
+
+      <div class="form-section">
+        <p>Which option best describes your current role?</p>
+        <select class="form-control" name="" id="dropdown">
+          <option disabled selected value>Select Current Role</option>
+          <option value="">Student</option>
+          <option value="">Full Time Job</option>
+          <option value="">Full Time Learner</option>
+          <option value="">Prefer Not To Say</option>
+          <option value="">Other</option>
+        </select>
+      </div>
+
+      <div class="form-section">
+        <p>Would you recommend us to a friend?</p>
+        <label for=""
+          ><input
+            class="inline"
+            value="Definitely"
+            name="recomentadion"
+            type="radio"
+          />Definitely</label
+        >
+        <label for=""
+          ><input
+            class="inline"
+            value="Maybe"
+            name="recomentadion"
+            type="radio"
+          />Maybe</label
+        >
+        <label for=""
+          ><input
+            class="inline"
+            value="Not Sure"
+            name="recomentadion"
+            type="radio"
+          />Not Sure</label
+        >
+      </div>
+
+      <div class="form-section">
+        <p>What would you like to see improved?</p>
+        <label for="">
+          <input
+            class="inline"
+            value="Front-end Projects"
+            type="checkbox"
+            name=""
+            id=""
+          />Front-end Projects</label
+        >
+        <label for=""
+          ><input
+            class="inline"
+            value="Back-end Projects"
+            type="checkbox"
+            name=""
+            id=""
+          />Back-end Projects</label
+        >
+        <label for=""
+          ><input
+            class="inline"
+            value="Data Visualization"
+            type="checkbox"
+            name=""
+            id=""
+          />Data Visualization</label
+        >
+        <label for=""
+          ><input
+            class="inline"
+            value="Challenges"
+            type="checkbox"
+            name=""
+            id=""
+          />Challenges</label
+        >
+        <label for=""
+          ><input
+            class="inline"
+            value="Open Source Community"
+            type="checkbox"
+            name=""
+            id=""
+          />Open Source Community</label
+        >
+        <label for=""
+          ><input
+            class="inline"
+            value="Forum"
+            type="checkbox"
+            name=""
+            id=""
+          />Forum</label
+        >
+      </div>
+
+      <div class="form-section">
+        <p>Aditional Comments</p>
+        <textarea class="form-control" placeholder="Enter Your Text Here..."></textarea>
+      </div>
+
+      <div class="form-section">
+        <button class="submit-button" id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
